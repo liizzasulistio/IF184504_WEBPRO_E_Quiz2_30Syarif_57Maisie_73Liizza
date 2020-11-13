@@ -1,0 +1,71 @@
+﻿@model DFI_Project.Models.User
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+<div>
+    <h4>User Information</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserID)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.UserID)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserUsername)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.UserUsername)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserEmail)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.UserEmail)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserPassword)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.UserPassword)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.UserName)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserHometown)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.UserHometown)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserBirthDate)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.UserBirthDate)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserTwitter)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.UserTwitter)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserInstagram)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.UserInstagram)
+        </dt>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.UserID">Edit</a>
+    <a asp-action="Index">Back to List</a>
+</div>
