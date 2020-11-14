@@ -1,0 +1,77 @@
+﻿@model DFI_Project.Models.Project
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+<div>
+    <h4>Project Information</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProjectID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectTitle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProjectTitle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectTheme)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProjectTheme)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectRegistStart)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProjectRegistStart)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectRegistEnd)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProjectRegistEnd)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectDeadline)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProjectDeadline)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectPostDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProjectPostDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectColorPalette)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProjectColorPalette)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectCanvasSize)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProjectCanvasSize)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectDescription)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProjectDescription)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ProjectID">Edit</a>
+    <a asp-action="Index">Back to List</a>
+</div>
