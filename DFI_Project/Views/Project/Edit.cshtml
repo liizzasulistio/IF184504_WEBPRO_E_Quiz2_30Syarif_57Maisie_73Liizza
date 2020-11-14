@@ -1,0 +1,74 @@
+﻿@model DFI_Project.Models.Project
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+<h3>Project Edit</h3>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ProjectID" />
+            <div class="form-group">
+                <label asp-for="ProjectTitle" class="control-label"></label>
+                <input asp-for="ProjectTitle" class="form-control" />
+                <span asp-validation-for="ProjectTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectTheme" class="control-label"></label>
+                <input asp-for="ProjectTheme" class="form-control" />
+                <span asp-validation-for="ProjectTheme" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectRegistStart" class="control-label"></label>
+                <input asp-for="ProjectRegistStart" class="form-control" />
+                <span asp-validation-for="ProjectRegistStart" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectRegistEnd" class="control-label"></label>
+                <input asp-for="ProjectRegistEnd" class="form-control" />
+                <span asp-validation-for="ProjectRegistEnd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectDeadline" class="control-label"></label>
+                <input asp-for="ProjectDeadline" class="form-control" />
+                <span asp-validation-for="ProjectDeadline" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectPostDate" class="control-label"></label>
+                <input asp-for="ProjectPostDate" class="form-control" />
+                <span asp-validation-for="ProjectPostDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectColorPalette" class="control-label"></label>
+                <input asp-for="ProjectColorPalette" class="form-control" />
+                <span asp-validation-for="ProjectColorPalette" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectCanvasSize" class="control-label"></label>
+                <input asp-for="ProjectCanvasSize" class="form-control" />
+                <span asp-validation-for="ProjectCanvasSize" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectDescription" class="control-label"></label>
+                <input asp-for="ProjectDescription" class="form-control" />
+                <span asp-validation-for="ProjectDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts{
+    @{ await Html.RenderPartialAsync("/Views/Shared/_ValidationScriptsPartial.cshtml");}
+}
