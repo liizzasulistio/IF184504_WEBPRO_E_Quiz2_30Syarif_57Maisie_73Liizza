@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{02331ED6-8EEB-432C-B9F2-20CEB2D03F0E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DFI_Project/Controllers/UserController.cs">
+    <Files>
+      <File FileName="DFI_Project/Models/User.cs" Line="1" Column="1" />
+      <File FileName="DFI_Project/Models/UserDAL.cs" />
+      <File FileName="DFI_Project/Views/User/Delete.cshtml" />
+      <File FileName="DFI_Project/Views/User/Create.cshtml" />
+      <File FileName="DFI_Project/Controllers/UserController.cs" Line="18" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DFI_Project" expanded="True">
+            <Node name="DFI_Project" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="UserController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="User" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.DFI__Project PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
