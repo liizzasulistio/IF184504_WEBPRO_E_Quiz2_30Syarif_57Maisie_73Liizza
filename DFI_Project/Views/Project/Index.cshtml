@@ -1,0 +1,91 @@
+﻿@model IEnumerable<DFI_Project.Models.Project>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Project</h1>
+<p>
+    <a asp-action="Create">Create</a>
+</p>
+
+@*For Display Project Info*@
+<table class="table table-stripped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectTheme)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectRegistStart)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectRegistEnd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectDeadline)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectPostDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectColorPalette)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectCanvasSize)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectDescription)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var emp in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => emp.ProjectID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => emp.ProjectTitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => emp.ProjectTheme)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => emp.ProjectRegistStart)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => emp.ProjectRegistEnd)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => emp.ProjectDeadline)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => emp.ProjectPostDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => emp.ProjectColorPalette)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => emp.ProjectCanvasSize)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => emp.ProjectDescription)
+                </td>
+
+                <td>
+                    <a asp-action="Edit" asp-route-id="@emp.ProjectID">Edit</a>
+                    <a asp-action="Details" asp-route-id="@emp.ProjectID">Details</a>
+                    <a asp-action="Delete" asp-route-id="@emp.ProjectID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
